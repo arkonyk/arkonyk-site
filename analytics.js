@@ -239,3 +239,28 @@ var ARKONYK_RB2B_KEY = "4N210HXQ7M6Z";
     }
   });
 })();
+
+/* ============== First-party visit beacon (Descriptors platform) ==============
+   Org-level network intel: the receiving server notes the visiting NETWORK's
+   registered owner (ASN) and discards the IP — no cookies set, nothing stored
+   in the browser. Honours the same consent rules as the trackers above
+   (EEA/UK/CH opt-in, ark_consent, Global Privacy Control). */
+(function () {
+  "use strict";
+  var host = window.location.hostname;
+  if (host !== "arkonyk.com" && host !== "www.arkonyk.com") return;
+  var stored = null;
+  try { stored = localStorage.getItem("ark_consent"); } catch (e) {}
+  var tz = "";
+  try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) {}
+  var gpc = false;
+  try { gpc = navigator.globalPrivacyControl === true; } catch (e) {}
+  var allowed = stored === "granted" ||
+    (tz.indexOf("Europe/") !== 0 && stored !== "denied" && !gpc);
+  if (!allowed) return;
+  try {
+    navigator.sendBeacon("https://www.whobilled.me/api/wbm/visit",
+      JSON.stringify({ site: host, path: window.location.pathname,
+                       ref: document.referrer || null }));
+  } catch (e) {}
+})();
