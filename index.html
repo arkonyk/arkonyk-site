@@ -26,7 +26,7 @@
 <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts.css?v=1">
 <script src="analytics.js?v=1"></script>
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 <link rel="icon" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script type="application/ld+json">
@@ -98,7 +98,7 @@
     <div class="hero-cta">
       <a class="btn btn-primary btn-lg" href="solutions.html">Explore our Solutions <span class="arrow">→</span></a>
     </div>
-    <p class="hero-note">Built by payments operators &mdash; Visa &middot; Verifi &middot; CardinalCommerce &middot; Signifyd &middot; Elavon &middot; Global Payments</p>
+    <p class="hero-note">Founded and run by operators from Visa, Verifi, CardinalCommerce, Signifyd, Elavon and Global Payments.</p>
   </div>
 </section>
 
@@ -113,81 +113,44 @@
   </div>
 </div>
 
-<!-- ===== Solutions ===== -->
+<!-- ===== Solutions (Hallmark pass 2026-09-05: one pass, real hierarchy —
+     Descriptors.com featured, FeeSuite and ARKITEKT as rows; the three
+     identical cards + three repeated bands that followed are gone) ===== -->
 <section>
   <div class="container">
     <div class="section-head" style="max-width:none">
-      <span class="eyebrow">Three core solutions</span>
-      <h2 style="white-space:nowrap;font-size:clamp(1rem,3.3vw,2.7rem)">Solutions that drive progress.</h2>
-      <p class="lead">Each can be purchased independently, but they're designed to work together as a comprehensive payment optimization platform.</p>
+      <h2>Solutions that drive progress.</h2>
+      <p class="lead">Each can be purchased independently, but they&rsquo;re designed to work together as a comprehensive payment optimization platform.</p>
     </div>
-    <div class="grid grid-3">
-      <div class="card product">
+
+    <div class="sol-featured">
+      <div>
         <img class="product-card-logo" src="descriptors-white.png" alt="Descriptors.com">
         <div class="ptag">Solving Customer Confusion</div>
-        <p>Register, manage, and validate the billing descriptors customers see on their statements — so they recognize charges. 61% of disputes trace to vague merchant descriptions or missing information &mdash; not fraud.</p>
-        <a class="plink" href="product-descriptors.html">Learn more <span class="arrow">→</span></a>
+        <h3 class="sol-h">The end of &ldquo;I don&rsquo;t recognize this charge.&rdquo;</h3>
+        <p>Millions of people stare at a statement line every month and cannot tell who charged them. The industry prices that confusion in as a cost of doing business &mdash; we treat it as a defect, and defects can be fixed. Descriptors.com is the registry where merchants declare who they are, so every charge can explain itself and the dispute button stops being the bank&rsquo;s only answer.</p>
+        <p class="sol-cite">&ldquo;61% of disputes are due to vague merchant descriptions or lack of information, not actual fraud.&rdquo; <span>&mdash; Srii Srinivasan, co-founder and former CEO, Chargeback Gurus, 2025</span></p>
+        <p style="margin-top:22px"><a class="btn btn-primary" href="product-descriptors.html">See Descriptors.com <span class="arrow">&rarr;</span></a></p>
       </div>
-      <div class="card product">
-        <img class="product-card-logo" src="feesuite-logo-white.png" alt="FeeSuite">
-        <div class="ptag">Reconciliation Made Easy</div>
-        <p>Automatically reconcile your acquirer and processor statements every month, keep a full history, and see your true cost of payments — with anomalies, errors, and duplicate or excessive charges surfaced for you.</p>
-        <a class="plink" href="product-feesuite.html">Learn more <span class="arrow">→</span></a>
-      </div>
-      <div class="card product">
-        <img class="product-card-logo" src="product-arkitekt-white.png" alt="ARKITEKT">
-        <div class="ptag">Global Payments By Design</div>
-        <p>Arkonyk's payment architecture practice. Independent strategy, processor selection, cost optimization, fraud reduction, and global expansion from senior operators.</p>
-        <a class="plink" href="product-arkitekt.html">Learn more <span class="arrow">→</span></a>
-      </div>
+      <div><img class="product-illustration" src="descriptors-illustration.png" alt="Descriptors.com connects issuers, acquirers, merchants, and cardholders on one payment data layer" loading="lazy"></div>
     </div>
-  </div>
-</section>
 
-<!-- ===== Product bands: Descriptors / FeeSuite / ARKITEKT ===== -->
-<section class="section-light" id="descriptors-mission" style="padding:64px 0">
-  <div class="container">
-    <div class="pband">
-      <div class="pb-logo"><img src="descriptors-white.png" alt="Descriptors.com"></div>
+    <div class="sol-row">
+      <div><img src="feesuite-logo-white.png" alt="FeeSuite"><div class="ptag">Reconciliation Made Easy</div></div>
       <div>
-        <span class="eyebrow">Descriptors.com &middot; Solving Customer Confusion</span>
-        <h2 style="font-size:clamp(1.4rem,2.5vw,1.95rem)">The end of &ldquo;I don&rsquo;t recognize this charge.&rdquo;</h2>
-        <p class="lead" style="margin-top:12px;font-size:1.02rem">Millions of people stare at a statement line every month and cannot tell who charged them. The industry prices that confusion in as a cost of doing business &mdash; we treat it as a defect, and defects can be fixed. Descriptors.com is the registry where merchants declare who they are, so every charge can explain itself and the dispute button stops being the bank's only answer.</p>
-        <p style="margin-top:18px"><a class="btn btn-primary" href="product-descriptors.html">See Descriptors.com <span class="arrow">&rarr;</span></a></p>
+        <h3 class="sol-h">The worst job in finance, done in 15 minutes.</h3>
+        <p>Reconciling processor statements devours days and still hides the story. FeeSuite reconciles your acquirer and processor statements every month, keeps a full history, and shows your true cost of payments &mdash; with errors, duplicates, and excessive charges surfaced for you and routed to the people who can act on them.</p>
       </div>
+      <a class="plink" href="product-feesuite.html">See FeeSuite <span class="arrow">&rarr;</span></a>
     </div>
-  </div>
-</section>
 
-<section id="feesuite-home" style="padding:64px 0">
-  <div class="container">
-    <div class="pband flip">
+    <div class="sol-row">
+      <div><img src="product-arkitekt-white.png" alt="ARKITEKT"><div class="ptag">Global Payments By Design</div></div>
       <div>
-        <span class="eyebrow">FeeSuite &middot; Reconciliation Made Easy</span>
-        <h2 style="font-size:clamp(1.4rem,2.5vw,1.95rem)">The worst job in finance, done in 15 minutes.</h2>
-        <p class="lead" style="margin-top:12px;font-size:1.02rem">Reconciling processor statements devours days and still hides the story. FeeSuite makes it a quick 15-minute monthly routine &mdash; statements in, answers out.</p>
-        <ul>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Your true cost of payments, in plain language instead of interchange jargon</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Errors, duplicates, and excessive charges surfaced automatically</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> The findings that matter, routed to the people who can act on them</li>
-        </ul>
-        <p style="margin-top:18px"><a class="btn btn-primary" href="product-feesuite.html">See FeeSuite <span class="arrow">&rarr;</span></a></p>
+        <h3 class="sol-h">Nobody builds their payment stack twice.</h3>
+        <p>The biggest payments decisions are ones you only get to make once. ARKITEKT puts senior operators at your table &mdash; 15+ years across fraud, acquiring, and card-network strategy &mdash; who make specific, best-of-breed recommendations and stay through deployment. The recommendation is the product, not a referral.</p>
       </div>
-      <div class="pb-logo"><img src="feesuite-logo-white.png" alt="FeeSuite" style="max-width:64%"></div>
-    </div>
-  </div>
-</section>
-
-<section class="section-light" id="arkitekt-home" style="padding:64px 0">
-  <div class="container">
-    <div class="pband">
-      <div class="pb-logo"><img src="product-arkitekt-white.png" alt="ARKITEKT" style="max-width:64%"></div>
-      <div>
-        <span class="eyebrow">ARKITEKT &middot; Global Payments By Design</span>
-        <h2 style="font-size:clamp(1.4rem,2.5vw,1.95rem)">Nobody builds their payment stack twice.</h2>
-        <p class="lead" style="margin-top:12px;font-size:1.02rem">The biggest payments decisions are ones you only get to make once. ARKITEKT puts senior operators at your table &mdash; 15+ years across fraud, acquiring, and card-network strategy &mdash; who make specific, best-of-breed recommendations and stay through deployment. The recommendation is the product, not a referral.</p>
-        <p style="margin-top:18px"><a class="btn btn-primary" href="product-arkitekt.html">See ARKITEKT <span class="arrow">&rarr;</span></a> <a class="btn btn-outline" href="payments-benchmark.html" style="margin-left:10px;color:var(--ink);border-color:rgba(12,14,16,.3)">Run the benchmark</a></p>
-      </div>
+      <a class="plink" href="product-arkitekt.html">See ARKITEKT <span class="arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
