@@ -189,4 +189,14 @@
     <loc>https://arkonyk.com/trust.html</loc>
     <lastmod>2026-08-18</lastmod>
   </url>
+  <url>
+    <loc>https://arkonyk.com/newsroom.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arkonyk.com/press-ken-musante-joins-advisory-board.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>

@@ -33,5 +33,6 @@ Key facts:
 
 ## Company
 - [About](https://arkonyk.com/about.html): Mission, approach, and leadership.
+- [Newsroom](https://arkonyk.com/newsroom.html): Press releases and company announcements, including Ken Musante joining the Arkonyk advisory board (Oct 2026).
 - [Contact](https://arkonyk.com/contact.html): Talk to Arkonyk.
 - [Trust & Security](https://arkonyk.com/trust.html): Architecture, data handling, and sub-processors.

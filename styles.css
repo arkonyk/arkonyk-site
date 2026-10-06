@@ -865,3 +865,19 @@ details.calc-adv .calc-inner { padding-top: 15px; }
 .sol-statement { border-left: 1px solid rgba(12,14,16,.25); padding: 8px 0 8px 28px; }
 .sol-statement p { font-family: var(--display); font-size: 1.6rem; line-height: 1.2; color: var(--ink); }
 .sol-statement .s2 { margin-top: 18px; color: var(--accent-deep); }
+
+/* ---------- Newsroom / press releases (added 2026-10-06) ---------- */
+.press-body > p:first-of-type::first-letter { float: none; font: inherit; padding: 0; color: inherit; }
+.press-dateline { letter-spacing: .02em; }
+.press-headshot { float: right; width: 240px; margin: 6px 0 22px 34px; }
+.press-headshot img { width: 100%; height: auto; display: block; border-radius: var(--radius); border: 1px solid var(--line-light); }
+.press-headshot figcaption { font-size: .8rem; line-height: 1.4; color: var(--ink-soft); margin-top: 10px; }
+.press-body h2 { clear: both; }
+.press-body a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
+.press-links { font-size: .95rem; }
+.press-contact { margin-top: 2.4em; padding: 22px 24px; border-left: 3px solid var(--accent); background: var(--light-card); border-radius: 0 var(--radius) var(--radius) 0; font-size: .98rem; line-height: 1.6; color: var(--ink); }
+.press-contact a { color: var(--accent-deep); }
+.press-contact-label { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; color: var(--accent-deep); margin-bottom: 6px; }
+@media (max-width: 640px) {
+  .press-headshot { float: none; width: 180px; margin: 0 0 22px; }
+}
