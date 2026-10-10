@@ -7,8 +7,8 @@ Key facts:
 - Consumer property: WhoBilled.me — free descriptor lookup answering "who billed me?" for cardholders.
 - 61% of cardholder disputes trace to vague merchant descriptions or missing information, not actual fraud.
 - Descriptors.com pricing: $20/month per descriptor, no integration or API required.
-- Founded by Rick Lynch (former SVP roles at Visa and Verifi). Based in Huron, Ohio, USA.
-- Contact: info@arkonyk.com
+- Founded by Rick Lynch (former SVP roles at Visa and Verifi). Based in Sandusky, Ohio, USA (1521 E Perkins Ave, Sandusky, OH 44870).
+- Contact: info@arkonyk.com | 419-405-7711
 
 ## Products
 - [Descriptors.com](https://arkonyk.com/product-descriptors.html): Register, manage, and validate billing descriptors so cardholders recognize charges; reduces confusion-driven disputes.
