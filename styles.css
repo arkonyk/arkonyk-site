@@ -458,8 +458,14 @@ select option { background: var(--bg-2); }
 }
 
 /* ---------- Key people (Arkitekt) ---------- */
-.people-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 30px; }
-.person { text-align: center; }
+.people-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 22px; align-items: stretch; }
+/* People tiles (2026-11-03): thin ruled tile around each profile so the bio text
+   is bounded instead of hanging ragged in open space. LinkedIn icon pins to the
+   tile's bottom edge so a short bio and a long bio still align. */
+.person { text-align: center; display: flex; flex-direction: column; align-items: center; padding: 30px 22px 26px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.02); }
+.section-light .person { border-color: var(--line-light); background: var(--light-card); }
+.person-bio { flex: 1; }
+.person-li { margin-top: 18px; }
 .person-photo { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; margin: 0 auto 18px; }
 .person-name { font-size: 1.12rem; margin-bottom: 4px; }
 .person-role { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 12px; }
@@ -475,9 +481,10 @@ select option { background: var(--bg-2); }
 /* Advisors (2026-10-10): same card as Leadership, but fixed-width columns so
    one or two advisors sit at the left of the grid instead of stretching. */
 .advisors-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 262px)); }
-.advisors-grid .person-bio a { color: var(--accent); }
-@media (max-width: 860px) { .people-grid { grid-template-columns: repeat(2,1fr); gap: 40px 26px; } }
-@media (max-width: 460px) { .people-grid { grid-template-columns: 1fr; gap: 40px; } }
+.person-bio a { color: var(--accent); }
+.section-light .person-bio a { color: var(--accent-deep); }
+@media (max-width: 860px) { .people-grid { grid-template-columns: repeat(2,1fr); gap: 22px; } }
+@media (max-width: 460px) { .people-grid { grid-template-columns: 1fr; gap: 18px; } }
 
 /* ---------- Insights (editorial) ---------- */
 .ins-kicker { font-family: var(--body); font-size: .74rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; color: var(--accent); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
